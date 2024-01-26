@@ -1,0 +1,88 @@
+.signupbox{
+    width: 100%;
+    height: 100vh;
+    background-image:url('https://i.pinimg.com/1200x/f0/85/14/f08514ebe0695857a2eb38334b3ff8c6.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* backdrop-filter: blur(15.9px);
+-webkit-backdrop-filter: blur(15.9px); */
+/* background: rgba(24, 24, 25, 0.2); */
+}
+.innerbox{
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 16px 10px rgba(2, 2, 2, 0.2);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+font-family: 'Croissant One', cursive;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+z-index: 1001;
+background: inherit;
+background-size:cover;
+color: whitesmoke;
+}
+
+.innerbox input{
+    width: 70%;
+    background: none;
+    height: 40px;
+    border: none;
+    
+    color: whitesmoke;
+    font-size: 25px;
+    /* font-family: 'Croissant One', cursive; */
+    outline: none;
+}
+.innerbox input:hover{
+    
+    border-bottom: 1px solid rgb(60, 59, 59);
+    
+}
+.innerbox input::placeholder{
+    color: rgb(239, 234, 234);
+}
+.loginbth{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: none;
+   
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px 10px rgba(4, 4, 4, 0.3);
+    font-size: 15px;
+    font-family: 'Croissant One', cursive;
+    color: whitesmoke;
+    /* background: inherit; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.loginbth:hover{
+    box-shadow: 0px 0px 8px 8px rgba(4, 4, 4, 0.3);
+color: whitesmoke;
+cursor: pointer;
+
+}
+.overlay{
+    position: fixed;
+    /* background-color: red;  */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+    
+    pointer-events: all;
+    z-index:1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+}

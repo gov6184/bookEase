@@ -1,0 +1,87 @@
+.loginbox{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    background-image: url("https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJvb2t8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(159, 157, 157);
+}
+.innerbox{
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 0px 16px 10px rgba(120, 118, 118, 0.2);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+font-family: 'Croissant One', cursive;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+z-index: 1001;
+background: inherit;
+background-size:100% 100%;
+color: whitesmoke;
+
+}
+
+.innerbox input{
+    width: 70%;
+    background: none;
+    height: 40px;
+    border: none;
+    
+    color: rgb(211, 208, 208);
+    font-size: 20px;
+   
+    outline: none;
+}
+.innerbox  input:hover{
+    border-bottom: 1.5px solid gray;
+    
+}
+.innerbox input::placeholder{
+    color :rgb(205, 202, 202);
+}
+
+.loginbth{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: none;
+   
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px 10px rgba(81, 80, 80, 0.3);
+    font-size: 20px;
+    font-family: 'Croissant One', cursive;
+    color: whitesmoke;
+    /* background: inherit; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.loginbth:hover{
+    box-shadow: 0px 0px 8px 8px rgba(4, 4, 4, 0.3);
+color: whitesmoke;
+cursor: pointer;
+
+}
+.overlay{
+    position: fixed;
+    /* background-color: red;  */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+    
+    pointer-events: all;
+    z-index:1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+}
