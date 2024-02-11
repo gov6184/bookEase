@@ -8,10 +8,19 @@ userroute.get("/users",async(req,res)=>{
 })
 userroute.post("/users/create",async(req,res)=>{
     
-    let val=req.body
-    let nn=new usermod(val)
-    await nn.save()
-    res.send("done")
+    let {email,phone_no}=req.body
+    const query = {
+        $or: [
+          { "gmail": { $regex: new RegExp("^" + email, "i") } },
+          { "phone_number": { $regex: new RegExp("^" + phone_no, "i") } }
+        ]
+      };
+  
+    let check=await usermod.find(query).toArray();
+    console.log(check)
+    // let nn=new usermod(val)
+    // await nn.save()
+    res.send(check)
 })
 
 
