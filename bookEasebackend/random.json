@@ -1,0 +1,487 @@
+ [
+  {
+    "book_id": "book1",
+    "ownerName": "Ava Rodriguez",
+    "availableFor": "sell",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41IkR2Ml51L._SY445_SX342_.jpg",
+      "bookTitle": "The Great Gatsby",
+      "bookAuthor": "F. Scott Fitzgerald",
+      "bookPublisher": "Scribner",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "20",
+      "bookDescription": "A novel that depicts the roaring twenties in America through the story of Jay Gatsby, a mysterious millionaire.",
+      "Genre": "Classic American Literature"
+    },
+    "bookQualityRating": 4
+  },
+  {
+    "book_id": "book2",
+    "ownerName": "Olivia Jones",
+    "availableFor": "both",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41F3HcS9bWL._SY445_SX342_.jpg",
+      "bookTitle": "The Metamorphosis",
+      "bookAuthor": "Franz Kafka",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "5",
+      "bookbuyPrice": "14",
+      "bookDescription": "A novella that tells the story of Gregor Samsa, a salesman who wakes up one morning to find himself transformed into a giant insect.",
+      "Genre": "Absurdist Fiction"
+    },
+    "bookQualityRating": 3
+  },
+  {
+    "book_id": "book3",
+    "ownerName": "Lucas Hernandez",
+    "availableFor": "rent",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41iNMfQkUrL._SY445_SX342_.jpg",
+      "bookTitle": "One Flew Over the Cuckoo's Nest",
+      "bookAuthor": "Ken Kesey",
+      "bookPublisher": "Signet Classics",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "19",
+      "bookDescription": "A novel that tells the story of Randle McMurphy, a criminal who feigns mental illness to avoid hard labor and disrupts the order of a psychiatric ward.",
+      "Genre": "Satire"
+    },
+    "bookQualityRating": 5
+  },
+  {
+    "book_id": "book4",
+    "ownerName": "Noah Miller",
+    "availableFor": "sell",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41sOTGPO9uL._SY445_SX342_.jpg",
+      "bookTitle": "Jane Eyre",
+      "bookAuthor": "Charlotte Brontë",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "6",
+      "bookbuyPrice": "15",
+      "bookDescription": "A gothic novel that tells the story of Jane Eyre, a young orphan who goes on to work as a governess for a mysterious and brooding Rochester.",
+      "Genre": "Gothic Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+    "book_id": "book5",
+    "ownerName": "Mia Johnson",
+    "availableFor": "both",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41XSu773esL._SY445_SX342_.jpg",
+      "bookTitle": "The Adventures of Huckleberry Finn",
+      "bookAuthor": "Mark Twain",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "9",
+      "bookbuyPrice": "22",
+      "bookDescription": "A novel that tells the story of Huckleberry Finn, a young boy who runs away from home on a raft down the Mississippi River with Jim, a runaway slave.",
+      "Genre": "Coming-of-Age Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book6",
+   "ownerName": "Ava Rodriguez",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/4134kZ9hL+L._SY445_SX342_.jpg",
+     "bookTitle": "Tess of the d'Urbervilles",
+     "bookAuthor": "Thomas Hardy",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "17",
+      "bookDescription": "A novel that tells the story of Tess Durbeyfield, a young woman who faces hardship and heartbreak in Victorian England.",
+      "Genre": "Tragic Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book7",
+   "ownerName": "Olivia Jones",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/51UcLDQFFVL._SY445_SX342_.jpg",
+     "bookTitle": "The Hitchhiker's Guide to the Galaxy",
+     "bookAuthor": "Douglas Adams",
+      "bookPublisher": "Pan Books",
+      "bookRentPrice": "6",
+      "bookbuyPrice": "15",
+      "bookDescription": "A comedic science fiction series that follows the adventures of Arthur Dent after the Earth is destroyed to make way for a hyperspace bypass.",
+      "Genre": "Science Fiction Comedy"
+    },
+    "bookQualityRating": 3
+  },
+  {
+   "book_id": "book8",
+   "ownerName": "Lucas Hernandez",
+   "availableFor": "both",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/51i3Od1VGpL._SY445_SX342_.jpg",
+     "bookTitle": "Things Fall Apart",
+     "bookAuthor": "Chinua Achebe",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "20",
+      "bookDescription": "A novel that tells the story of Okonkwo, a leader in his Igbo village in Nigeria, and the clash between traditional Igbo culture and European colonialism.",
+      "Genre": "Historical Fiction"
+    },
+    "bookQualityRating": 5
+  },
+  {
+   "book_id": "book9",
+   "ownerName": "Noah Miller",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/31zzmiNcUuL._SY445_SX342_.jpg",
+     "bookTitle": "The Handmaid's Tale",
+     "bookAuthor": "Margaret Atwood",
+      "bookPublisher": "Anchor Books",
+      "bookRentPrice": "9",
+      "bookbuyPrice": "22",
+      "bookDescription": "A dystopian novel that tells the story of Offred, a woman forced into servitude in a totalitarian society where women are valued only for their reproductive abilities.",
+      "Genre": "Dystopian Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book10",
+   "ownerName": "Mia Johnson",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/61JoqxHgbwL._SY445_SX342_.jpg",
+     "bookTitle": "Their Eyes Were Watching God",
+     "bookAuthor": "Zora Neale Hurston",
+      "bookPublisher": "Harper Perennial Modern Classics",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "21",
+      "bookDescription": "A novel that tells the story of Janie Crawford, an African-American woman who searches for love and identity in the early 20th century American South.",
+      "Genre": "African-American Literature"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book11",
+   "ownerName": "Ava Rodriguez",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/41ewlgR53kL._SY445_SX342_.jpg",
+     "bookTitle": "Pride and Prejudice",
+     "bookAuthor": "Jane Austen",
+      "bookPublisher": "Barnes & Noble Classics",
+      "bookRentPrice": "6",
+      "bookbuyPrice": "16",
+      "bookDescription": "A novel of manners by Jane Austen, first published in 1813. The story follows the main character, Elizabeth Bennet, as she deals with issues of marriage, wealth, and morality in early 19th-century England.",
+      "Genre": "Classic Literature"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book12",
+   "ownerName": "Olivia Jones",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/519fpO5ELjL._SY445_SX342_.jpg",
+     "bookTitle": "To Kill a Mockingbird",
+     "bookAuthor": "Harper Lee",
+      "bookPublisher": "Harper Perennial",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "18",
+      "bookDescription": "A novel that tells the story of Scout Finch, a young girl growing up in Alabama during the Depression, and her experiences with racial injustice.",
+      "Genre": "Southern Literature"
+    },
+    "bookQualityRating": 5
+  },
+  {
+   "book_id": "book13",
+   "ownerName": "Lucas Hernandez",
+   "availableFor": "both",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/41uBViwic5L._SY445_SX342_.jpg",
+     "bookTitle": "Dune",
+     "bookAuthor": "Frank Herbert",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "9",
+      "bookbuyPrice": "23",
+      "bookDescription": "A science fiction novel that tells the story of Paul Atreides, son of Duke Leto Atreides, and his family's control of the desert planet Arrakis, the only source of the spice melange.",
+      "Genre": "Science Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book14",
+   "ownerName": "Noah Miller",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/41uHU3QnKAL._SY445_SX342_.jpg",
+     "bookTitle": "The Lord of the Rings",
+     "bookAuthor": "J. R. R. Tolkien",
+      "bookPublisher": "Houghton Mifflin Harcourt",
+      "bookRentPrice": "12",
+      "bookbuyPrice": "30",
+      "bookDescription": "An epic high-fantasy trilogy written by English philologist and University of Oxford professor J. R. R. Tolkien. The story began as a sequel to Tolkien's 1937 children's fantasy novel The Hobbit, but eventually developed into a much larger work.",
+      "Genre": "Fantasy"
+    },
+    "bookQualityRating": 5
+  },
+  {
+   "book_id": "book15",
+   "ownerName": "Mia Johnson",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/51TI+w56qFL._SY445_SX342_.jpg",
+     "bookTitle": "The Catcher in the Rye",
+     "bookAuthor": "J. D. Salinger",
+      "bookPublisher": "Little, Brown and Company",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "20",
+      "bookDescription": "A novel that tells the story of Holden Caulfield, a teenager who is expelled from boarding school and embarks on a journey through New York City.",
+      "Genre": "Coming-of-Age Fiction"
+    },
+    "bookQualityRating": 3
+  },
+  {
+   "book_id": "book16",
+   "ownerName": "Ava Rodriguez",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/418jD+Rsd5L._SY445_SX342_.jpg",
+     "bookTitle": "The Hobbit",
+     "bookAuthor": "J. R. R. Tolkien",
+      "bookPublisher": "Houghton Mifflin Harcourt",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "20",
+      "bookDescription": "A fantasy novel by English philologist and Oxford professor J. R. R. Tolkien. Set in Middle-earth, it tells the story of hobbit Bilbo Baggins, who embarks on a journey to reclaim a mountain hoard from the dragon Smaug.",
+      "Genre": "Fantasy"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book17",
+   "ownerName": "Olivia Jones",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://covers.openlibrary.org/b/id/1952255-L.jpg",
+     "bookTitle": "The Adventures of Sherlock Holmes",
+     "bookAuthor": "Arthur Conan Doyle",
+      "bookPublisher": "Barnes & Noble Classics",
+        "bookRentPrice": "5",
+        "bookbuyPrice": "12",
+      "bookDescription": "A collection of detective stories featuring the fictional detective Sherlock Holmes and his long-suffering flatmate Dr. John Watson.",
+      "Genre": "Mystery Fiction"
+    },
+    "bookQualityRating": 3
+  },
+  {
+   "book_id": "book18",
+   "ownerName": "Lucas Hernandez",
+   "availableFor": "both",
+   "bookInfo": {
+     "bookImage": "https://covers.openlibrary.org/b/id/1123209-L.jpg",
+     "bookTitle": "The Great Gatsby",  
+     "bookAuthor": "F. Scott Fitzgerald",
+      "bookPublisher": "Scribner",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "20",
+      "bookDescription": "A novel that depicts the roaring twenties in America through the story of Jay Gatsby, a mysterious millionaire.",
+      "Genre": "Classic American Literature"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book19",
+   "ownerName": "Noah Miller",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/41sjzA8EGhL._SY445_SX342_.jpg",
+     "bookTitle": "1984",
+     "bookAuthor": "George Orwell",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "18",
+      "bookDescription": "A dystopian political thriller novel by English novelist George Orwell published in 1949.",
+      "Genre": "Dystopian Fiction"
+    },
+    "bookQualityRating": 5
+  },
+  {
+   "book_id": "book20",
+   "ownerName": "Mia Johnson",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://covers.openlibrary.org/b/id/2788691-L.jpg",
+     "bookTitle": "Their Eyes Were Watching God",  
+     "bookAuthor": "Zora Neale Hurston",
+      "bookPublisher": "Harper Perennial Modern Classics",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "21",
+      "bookDescription": "A novel that tells the story of Janie Crawford, an African-American woman who searches for love and identity in the early 20th century American South.",
+      "Genre": "African-American Literature"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book21",
+   "ownerName": "Ava Rodriguez",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/51eeAWItwbL._SY445_SX342_.jpg",
+     "bookTitle": "The Lord of the Flies",
+     "bookAuthor": "William Golding",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "6",
+      "bookbuyPrice": "15",
+      "bookDescription": "A novel that tells the story of a group of schoolboys stranded on an uninhabited island after a plane crash.",
+      "Genre": "Dystopian Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book22",
+   "ownerName": "Olivia Jones",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/41z7ukJFnSL._SY445_SX342_.jpg",
+     "bookTitle": "Frankenstein",
+     "bookAuthor": "Mary Shelley",
+      "bookPublisher": "Dover Publications",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "18",
+      "bookDescription": "A gothic novel by Mary Shelley that tells the story of Victor Frankenstein, a young scientist who creates a monster in his laboratory.",
+      "Genre": "Gothic Fiction"
+    },
+    "bookQualityRating": 3
+  },
+  {
+   "book_id": "book23",
+   "ownerName": "Lucas Hernandez",
+   "availableFor": "both",
+   "bookInfo": {
+     "bookImage": "https://covers.openlibrary.org/b/id/2233295-L.jpg",
+     "bookTitle": "To Kill a Mockingbird",  
+     "bookAuthor": "Harper Lee",
+      "bookPublisher": "Harper Perennial",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "18",
+      "bookDescription": "A novel that tells the story of Scout Finch, a young girl growing up in Alabama during the Depression, and her experiences with racial injustice.",
+      "Genre": "Southern Literature"
+    },
+    "bookQualityRating": 5
+  },
+  {
+   "book_id": "book24",
+   "ownerName": "Noah Miller",
+   "availableFor": "rent",
+   "bookInfo": {
+     "bookImage": "https://m.media-amazon.com/images/I/51lmFoufjzL._SY445_SX342_.jpg",
+     "bookTitle": "The Adventures of Tom Sawyer",
+     "bookAuthor": "Mark Twain",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "5",
+      "bookbuyPrice": "13",
+      "bookDescription": "A novel that tells the story of Tom Sawyer, a young boy who lives in the fictional town of St. Petersburg, Missouri, on the banks of the Mississippi River during the American Civil War.",
+      "Genre": "Coming-of-Age Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+   "book_id": "book25",
+   "ownerName": "Mia Johnson",
+   "availableFor": "sell",
+   "bookInfo": {
+     "bookImage": "https://covers.openlibrary.org/b/id/1142772-L.jpg",
+     "bookTitle": "The Adventures of Huckleberry Finn",  
+     "bookAuthor": "Mark Twain",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "9",
+      "bookbuyPrice": "22",
+      "bookDescription": "A novel that tells the story of Huckleberry Finn, a young boy who runs away from home on a raft down the Mississippi River with Jim, a runaway slave.",
+      "Genre": "Coming-of-Age Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+    "book_id": "book26",
+    "ownerName": "Ava Rodriguez",
+    "availableFor": "rent",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41+hC7sSc0L._SY445_SX342_.jpg",
+      "bookTitle": "The Diary of a Young Girl",
+      "bookAuthor": "Anne Frank",
+      "bookPublisher": "Penguin Classics",
+      "bookRentPrice": "8",
+      "bookbuyPrice": "20",
+      "bookDescription": "A diary written by a young Jewish girl named Anne Frank hiding in Nazi-occupied Amsterdam during World War II.",
+      "Genre": "Biography"
+    },
+    "bookQualityRating": 5
+  },
+  {
+    "book_id": "book27",
+    "ownerName": "Olivia Jones",
+    "availableFor": "sell",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/31xXfVRPC4L._SY445_SX342_.jpg",
+      "bookTitle": "Beloved",
+      "bookAuthor": "Toni Morrison",
+      "bookPublisher": "Vintage Books",
+      "bookRentPrice": "9",
+      "bookbuyPrice": "22",
+      "bookDescription": "A novel that tells the story of Sethe, a former slave haunted by the ghost of her deceased daughter.",
+      "Genre": "Historical Fiction"
+    },
+    "bookQualityRating": 4
+  },
+  {
+    "book_id": "book28",
+    "ownerName": "Lucas Hernandez",
+    "availableFor": "both",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/41Gh5-nfqKL._SY445_SX342_.jpg",
+      "bookTitle": "Invisible Man",
+      "bookAuthor": "Ralph Ellison",
+      "bookPublisher": "Vintage Books",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "18",
+      "bookDescription": "A novel that tells the story of an unnamed African-American man and his experiences with racism and identity in America.",
+      "Genre": "Bildungsroman"
+    },
+    "bookQualityRating": 5
+  },
+  {
+    "book_id": "book29",
+    "ownerName": "Noah Miller",
+    "availableFor": "rent",
+    "bookInfo": {
+      "bookImage": "https://m.media-amazon.com/images/I/4160ZHqVwSL._SY445_SX342_.jpg",
+      "bookTitle": "The God of Small Things",
+      "bookAuthor": "Arundhati Roy",
+      "bookPublisher": "Anchor Books",
+      "bookRentPrice": "6",
+      "bookbuyPrice": "14",
+      "bookDescription": "A novel that tells the story of two fraternal twins, Estha and Rahel, and their experiences with loss and love in Kerala, India.",
+      "Genre": "Postcolonial Literature"
+    },
+    "bookQualityRating": 3
+  },
+  {
+    "book_id": "book30",
+    "ownerName": "Mia Johnson",
+    "availableFor": "sell",
+    "bookInfo": {
+      "bookImage": "https://covers.openlibrary.org/b/id/1927451-L.jpg",  
+      "bookTitle": "One Flew Over the Cuckoo's Nest",
+      "bookAuthor": "Ken Kesey",
+      "bookPublisher": "Signet Classics",
+      "bookRentPrice": "7",
+      "bookbuyPrice": "19",
+      "bookDescription": "A novel that tells the story of Randle McMurphy, a criminal who feigns mental illness to avoid hard labor and disrupts the order of a psychiatric ward.",
+      "Genre": "Satire"
+    },
+    "bookQualityRating": 5
+  }
+  
+ 
+  
+  
+
+]

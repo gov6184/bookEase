@@ -2,33 +2,34 @@ import React, { useState } from 'react'
 import style from "../css/Singlebook.module.css"
 import ReactCardFlip from 'react-card-flip';
 
-export default function Singlebook() {
+export default function Singlebook({item}) {
     let [fliped,isfliped]=useState(false);
   return (
 
     
         <ReactCardFlip isFlipped={fliped}  flipDirection='horizontal'>
             <div className={style.bookcover} onClick={()=>{isfliped(!fliped)}}>
-                <img src={"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1cYJ34xU2gQj46RyAYfqI8yz44CdZJRI7cw1xEMOuAyGfIX7M"}/>
+                <img src={`${item.bookInfo.bookImage}`}/>
             </div>
             <div className={style.bookinfo} onClick={()=>{isfliped(!fliped)}}>
                 <div className={style.booktitle}>
-                    <p>Book Title</p>
+                    <p>Title : {item.bookInfo.bookTitle}</p>
                 </div>
                 <div className={style.bookauthor}>
-                    <p>Book Author</p>
+                    <p>Author : {item.bookInfo.bookAuthor}</p>
                 </div>
                 <div className={style.bookpublisher}>
-                    <p>Book Publisher</p>
+                    <p>Publisher : {item.bookInfo.bookPublisher}</p>
                 </div>
                 <div className={style.bookpages}>
-                    <p>Book Pages</p>
+                    <p>BuyPrice : {item.bookInfo.bookbuyPrice}</p>
                 </div>
                 <div className={style.bookprice}>
-                    <p>Book Price</p>
+                    <p>RentPrice : {item.bookInfo.bookRentPrice}</p>
                 </div>
+                
                 <div className={style.bookdescription}>
-                    <p>Book Description</p>
+                    <p>Genre : {item.bookInfo.Genre}</p>
                 </div>
             </div>
         </ReactCardFlip>
@@ -36,3 +37,11 @@ export default function Singlebook() {
     
   )
 }
+
+
+
+
+
+
+
+

@@ -4,6 +4,7 @@ import style from "../css/addbookpopup.module.css"
 import { useRef } from 'react'
 import { useState } from 'react'
 import axios from "axios"
+import Camera from './Camera'
 
 export default function Addbookpopup({toggle ,settoggle}) {
    
@@ -14,6 +15,7 @@ export default function Addbookpopup({toggle ,settoggle}) {
    let [bookPriceForSell,setBookPriceForSell] = useState("");
    let [genre,setgenre] = useState("");
    let [bookDescription,setBookDescription] = useState("");
+   let[imageurl,setImageurl] = useState("");
    let [show,setshow]=useState("hide")
     let addbook=()=>{
         function generateRandomUniqueBookID() {
@@ -38,12 +40,16 @@ export default function Addbookpopup({toggle ,settoggle}) {
           }
           
         console.log("hi")
+        if(imageurl==""){
+          alert("please provide an image url")
+          return
+        }
         let obj={
              book_id:  `${generateRandomUniqueBookID()}`,
              ownerName:"random",
              availableFor:"both",
              bookInfo:{
-                bookImage:"https://www.mswordcoverpages.com/wp-content/uploads/2018/10/Book-cover-page-3-CRC.png",
+                bookImage:`${imageurl}`,
                 bookTitle:bookTitle,
             bookAuthor:bookAuthor,
             bookPublisher:bookPublisher,
@@ -115,7 +121,11 @@ export default function Addbookpopup({toggle ,settoggle}) {
                 <input placeholder=' ' onChange={(e)=>{setBookDescription(e.target.value)}} name='form_name' required/> 
                 <label className={style.inputlabel}>book Description *</label>
             </div>
-          
+            <div  className={style.inputdiv}>
+                <input placeholder=' ' onChange={(e)=>{setImageurl(e.target.value)}} name='form_name' required/> 
+                <label className={style.inputlabel}>image url* </label>
+            </div>
+           
          </div>
         
 

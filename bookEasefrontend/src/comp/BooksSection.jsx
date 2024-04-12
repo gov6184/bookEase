@@ -48,7 +48,6 @@ export default function BooksSection() {
         </div>
         
     </div>
-    <Footer/>
 </>
   )
 }

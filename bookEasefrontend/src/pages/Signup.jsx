@@ -39,13 +39,13 @@ export default function Signup() {
   }
   return (
     <div className={Style.signupbox}>
-      <form onSubmit={newuser} className={Style.innerbox}>
+      <div  className={Style.innerbox}>
           <h2>SignUp</h2>
           <input onChange={(e)=>{setemail(e.target.value)}} type='email' placeholder='Email' required/>
           <input onChange={(e)=>{setphone_no(e.target.value)}} type='number' placeholder='Phone No.'  required />
           <input onChange={(e)=>{setpassword(e.target.value)}} type='password' required placeholder='password'/>
-          <button  className={Style.loginbth}>SignUp</button>
-      </form>
+          <button onClick={newuser}  className={Style.loginbth}>SignUp</button>
+      </div>
       <div className={Style.overlay}>hii</div>
     </div>
   )

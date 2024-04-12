@@ -2,6 +2,7 @@ let express=require("express")
 let userroute=express.Router()
 let {usermod}=require("../modal/Usermodal")
 userroute.get("/users",async(req,res)=>{
+
     let val=await usermod.find()
     console.log(val)
     res.send(val)
@@ -9,18 +10,18 @@ userroute.get("/users",async(req,res)=>{
 userroute.post("/users/create",async(req,res)=>{
     
     let {email,phone_no}=req.body
-    const query = {
-        $or: [
-          { "gmail": { $regex: new RegExp("^" + email, "i") } },
-          { "phone_number": { $regex: new RegExp("^" + phone_no, "i") } }
-        ]
-      };
+    
   
-    let check=await usermod.find(query).toArray();
+
+    let check=await usermod.find({email: email})
+    let phonenocheck=await usermod.find({phone_no: phone_no})
     console.log(check)
-    // let nn=new usermod(val)
-    // await nn.save()
-    res.send(check)
+    if(check.length>0 || phonenocheck.length>0){
+        res.send("user already exists")
+    }
+    let nn=new usermod(req.body)
+    await nn.save()
+    res.sendStatus(200)
 })
 
 
