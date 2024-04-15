@@ -3,7 +3,8 @@ import style from "../css/renting.module.css";
 import Singlebook from '../comp/Singlebook';
 import Footer from '../comp/Footer';
 import Addbookpopup from '../comp/Addbookpopup';
-export default function Renting() {
+import { useNavigate } from 'react-router-dom';
+export default function Renting({changeitem,loginstatus}) {
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [toggle, setToggle] = useState(false);
@@ -11,7 +12,7 @@ export default function Renting() {
     const [selectedGenre, setSelectedGenre] = useState('All');
     const [availability, setAvailability] = useState('All');
     const [sortOrder, setSortOrder] = useState('');
-
+    let navigate=useNavigate()
     useEffect(() => {
         fetch("http://localhost:8080/books")
             .then(response => response.json())
@@ -55,7 +56,15 @@ export default function Renting() {
         <>
             <div className={style.rentingbox}>
                 <div className={style.searchandsellingbutton}>
-                    <button onClick={() => setToggle(true)} className={style.rentingbutton}>Add a book</button>
+                    <button onClick={() => {
+                        
+                        if (loginstatus) {
+                            setToggle(true);
+                        } else {
+                            alert ("please signup or login first")
+                            return
+                        }
+                        }} className={style.rentingbutton}>Add a book</button>
                     <div className={style.searchbox}>
                         <input placeholder='Search...' className={style.booksearch} value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
                         <img src={"src/css/loupe.png"} alt="search icon" />
@@ -93,7 +102,7 @@ export default function Renting() {
 
                     <div className={style.booksectionbox}>
                         {filteredData.map((item, index) => (
-                            <Singlebook key={index} item={item} />
+                            <Singlebook loginstatus={loginstatus} changeitem={changeitem} key={index} item={item} />
                         ))}
                     </div>
 

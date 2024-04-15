@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import style from "../css/Singlebook.module.css"
 import ReactCardFlip from 'react-card-flip';
-
-export default function Singlebook({item}) {
+import { useNavigate } from 'react-router-dom'
+import Moreinfo from './Moreinfo';
+export default function Singlebook({item,changeitem,loginstatus}) {
     let [fliped,isfliped]=useState(false);
+    let navigate=useNavigate()
   return (
 
     
@@ -13,24 +15,40 @@ export default function Singlebook({item}) {
             </div>
             <div className={style.bookinfo} onClick={()=>{isfliped(!fliped)}}>
                 <div className={style.booktitle}>
-                    <p>Title : {item.bookInfo.bookTitle}</p>
+                    <h4>Title:</h4>
+                    <p> {item.bookInfo.bookTitle}</p>
                 </div>
-                <div className={style.bookauthor}>
+                <div className={style.booktitle}>
+                    <h4>Author:</h4>
                     <p>Author : {item.bookInfo.bookAuthor}</p>
                 </div>
-                <div className={style.bookpublisher}>
-                    <p>Publisher : {item.bookInfo.bookPublisher}</p>
+                <div className={style.booktitle}>
+                    <h4>Publisher:</h4>
+                    <p>{item.bookInfo.bookPublisher}</p>
                 </div>
-                <div className={style.bookpages}>
-                    <p>BuyPrice : {item.bookInfo.bookbuyPrice}</p>
+                <div className={style.booktitle}>
+                    <h4>BuyPrice:</h4>
+                    <p>{item.bookInfo.bookbuyPrice}</p>
                 </div>
-                <div className={style.bookprice}>
-                    <p>RentPrice : {item.bookInfo.bookRentPrice}</p>
+                <div className={style.booktitle}>
+                    <h4>RentPrice:</h4>
+                    <p>{item.bookInfo.bookRentPrice}</p>
                 </div>
                 
-                <div className={style.bookdescription}>
-                    <p>Genre : {item.bookInfo.Genre}</p>
+                <div className={style.booktitle}>
+                    <h4>Genre:</h4>
+                    <p>{item.bookInfo.Genre}</p>
                 </div>
+                <div className={style.buttondiv}>
+                <button onClick={()=>{
+                    if(loginstatus==false){
+                        alert("Please signup or login first")
+                        return
+                    }
+                }} className={style.knowmorebutton}>Add to cart</button>
+                <button onClick={()=>{changeitem(item);navigate("/Moreinfo")}} className={style.knowmorebutton}>Know more</button>
+                </div>
+               
             </div>
         </ReactCardFlip>
        

@@ -23,6 +23,7 @@
     height: 350px;
     display: flex;
     flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
@@ -30,4 +31,38 @@
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: 'Concert One', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+.knowmorebutton{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Concert One', sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+.knowmorebutton:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.booktitle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height :10%;
+    line-height: 0%;
+    
+}
+.booktitle>h4{
+    margin-bottom: 10px;
+}
+buttondiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

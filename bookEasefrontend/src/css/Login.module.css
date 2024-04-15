@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:rgb(159, 157, 157);
 }
 .innerbox{
     width: 700px;
@@ -45,7 +44,7 @@ color: whitesmoke;
     
 }
 .innerbox input::placeholder{
-    color :rgb(205, 202, 202);
+    color :whitesmoke;
 }
 
 .loginbth{

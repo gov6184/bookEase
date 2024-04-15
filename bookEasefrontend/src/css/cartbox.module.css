@@ -1,7 +1,5 @@
 .maincartbox{
-    top: 0;
-    right: 0;
-    width: 350px;
+        width: 350px;
     height: 100vh;
     /* background-color: red; */
     position: fixed;

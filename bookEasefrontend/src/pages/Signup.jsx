@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import Style from "../css/Signup.module.css"
 import axios from 'axios'
-export default function Signup() {
+import { useNavigate } from 'react-router-dom'
+export default function Signup({setloginstatus}) {
   
   let [password,setpassword]=useState("")
   let [email,setemail]=useState("")
   let [phone_no,setphone_no]=useState("")
+  let nevigate=useNavigate()
   let newuser=async()=>{
     function generateRandomUniqueBookID() {
             
@@ -35,7 +37,15 @@ export default function Signup() {
     }
     console.log(obj)
     
-   await axios.post("http://localhost:8080/users/create", obj).then(res=>{console.log(res.data)})
+   await axios.post("http://localhost:8080/users/create", obj).then(res=>{
+    if(res.data=="success"){
+      setloginstatus(true)
+      nevigate("/rent")
+    }else{
+      alert(res.data)
+      nevigate("/login")
+    }
+   })
   }
   return (
     <div className={Style.signupbox}>
