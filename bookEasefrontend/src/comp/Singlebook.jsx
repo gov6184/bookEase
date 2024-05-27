@@ -40,12 +40,7 @@ export default function Singlebook({item,changeitem,loginstatus}) {
                     <p>{item.bookInfo.Genre}</p>
                 </div>
                 <div className={style.buttondiv}>
-                <button onClick={()=>{
-                    if(loginstatus==false){
-                        alert("Please signup or login first")
-                        return
-                    }
-                }} className={style.knowmorebutton}>Add to cart</button>
+               
                 <button onClick={()=>{changeitem(item);navigate("/Moreinfo")}} className={style.knowmorebutton}>Know more</button>
                 </div>
                

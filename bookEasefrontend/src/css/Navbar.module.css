@@ -86,10 +86,30 @@ z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 90px;
     
 }
 .cartimg:hover{
     cursor: pointer;
     
+}
+.cartdiv{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 90px;
+
+}
+.cartdiv >p{
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family: 'Croissant One', cursive;
+    border-radius: 100%;
+    background-color: black;
+    color: whitesmoke;
+    width:20px ;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

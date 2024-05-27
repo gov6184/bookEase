@@ -1,19 +1,4 @@
-.maincartbox{
-        width: 350px;
-    height: 100vh;
-    /* background-color: red; */
-    position: fixed;
-    z-index: 100000;
-    top: 0px;
-    /* background: rgba(251, 251, 253, .5); */
-    box-shadow: 0 10px 40px rgba(83, 83, 83, 0.1);
-    backdrop-filter: blur(15.9px);
-    -webkit-backdrop-filter: blur(15.9px);
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
+
 .open{
     opacity: 1;
 }
@@ -22,19 +7,19 @@
    z-index: 1000000;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    
+    flex-direction: column;
+    padding-top: 20px;
     align-items: center;
     position: fixed;
     top: 60px;
     right: 0%;
   border-radius: 20px;
    color: white;
-   
    backdrop-filter: blur(15.9px);
     -webkit-backdrop-filter: blur(15.9px);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
   color: black;
+
 }
 .popupname{
     font-style: italic;
@@ -86,3 +71,83 @@
     }
 }
 
+.singlecartbox{
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.singlebookinfo{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Croissant One', cursive;
+
+}
+.singlecartbox >img{
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.mainbox{
+    width: 100%;
+    height: 70%;
+    overflow: scroll;
+    overflow-x: hidden;
+  
+padding-top: 10px;
+    padding-left: 30px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.anotherbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: 'Croissant One', cursive;
+    height: 50px;
+}
+.rentbuttonbox{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rentbuttonbox>input{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    border: none;
+    outline: none;
+    background:transparent;
+    font-family: 'Croissant One', cursive;
+
+}
+.rentbuttonbox>button{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    border: none;
+    outline: none;
+    background:transparent;
+    font-family: 'Croissant One', cursive;
+}
+.rentbuttonbox>button:hover{
+    box-shadow: 0px 0px 8px 8px rgba(4, 4, 4, 0.3);
+    
+    cursor: pointer;
+}

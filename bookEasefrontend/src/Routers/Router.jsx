@@ -10,7 +10,7 @@ export default function Router({setloginstatus,loginstatus,setcartdata}) {
   let [moreinfobook,setmoreinfobook]=useState("")
   return (
     <Routes>
-        <Route path='/' element={<Home/>}  />
+        <Route path='/' element={<Home changeitem={setmoreinfobook}/>}  />
         <Route path='/login' element={<Login setloginstatus={setloginstatus}/>} />
         <Route path='/signup' element={<Signup setloginstatus={setloginstatus}/>} />
         <Route path='/Moreinfo' element={<Moreinfo setcartdata={setcartdata} loginstatus={loginstatus} item={moreinfobook}/>} />

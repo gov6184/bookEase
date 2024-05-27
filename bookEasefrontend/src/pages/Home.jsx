@@ -7,7 +7,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 
 
 
-export default function Home() {
+export default function Home({changeitem}) {
   let navigate=useNavigate()
   return (
     <div className={Style.Home}>
@@ -19,7 +19,7 @@ export default function Home() {
           <button onClick={()=>{navigate("/rent")}}>Start Reading</button>
         </div>
       </div>
-      <BooksSection/>
+      <BooksSection changeitem={changeitem}/>
       
     </div>
   )

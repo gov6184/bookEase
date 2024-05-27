@@ -36,6 +36,15 @@ export default function Signup({setloginstatus}) {
       phone_no
     }
     console.log(obj)
+    if(password=="" || email=="" || phone_no==""){
+      alert("please fill all the fields")
+      return
+    }
+    if(phone_no.length!=10 ){
+      alert("please provide a valid phone number")
+      return
+    }
+
     
    await axios.post("http://localhost:8080/users/create", obj).then(res=>{
     if(res.data=="success"){

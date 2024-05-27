@@ -18,3 +18,5 @@ let bcmodal=new mong.model("Bookcollection",mong.Schema({
 module.exports={
     bcmodal
 }
+
+

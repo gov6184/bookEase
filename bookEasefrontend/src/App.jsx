@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,6 +12,9 @@ import Footer from './comp/Footer'
 
 
 function App() {
+  useEffect(()=>{
+  localStorage.removeItem("loginstatus")
+  },[])
   const [count, setCount] = useState(0)
   let [cartshow,setcartshow]=useState("notshow")
   let [loginstatus,setloginstatus]=useState(false)
@@ -35,14 +38,23 @@ function App() {
       setcartdata(sstoredArray);
     }
   };
-
+  useEffect(()=>{
+    let val=localStorage.getItem('loginstatus')
+    if(val){
+      setloginstatus(val)
+    }
+  },[])
+const toaddloginstatus=(val)=>{
+localStorage.setItem("loginstatus",val)
+  setloginstatus(val)
+}
 
   return (
     <div className='App'>
       
-      <Navbar cartdata={cartdata} setloginstatus={setloginstatus} loginstatus={loginstatus}  cartshow={cartshow} setcartshow={setcartshow} />
-      <Cartbox cartdata={cartdata} setcartdata={addToLocalStorage} val={cartshow} data={"hiiiiiiiiiiiiiiiii"} />
-      <Router cartdata={cartdata} setcartdata={addToLocalStorage}  loginstatus={loginstatus} setloginstatus={setloginstatus}/>
+      <Navbar cartdata={cartdata} setloginstatus={toaddloginstatus} loginstatus={loginstatus}  cartshow={cartshow} setcartshow={setcartshow} />
+      <Cartbox cc={setcartdata} cartdata={cartdata} setcartdata={addToLocalStorage} val={cartshow} data={"hiiiiiiiiiiiiiiiii"} />
+      <Router cartdata={cartdata} setcartdata={addToLocalStorage}  loginstatus={loginstatus} setloginstatus={toaddloginstatus}/>
       
     
 
