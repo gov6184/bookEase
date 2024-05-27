@@ -1,0 +1,10 @@
+{
+    "builds": [{
+      "src": "backend",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "npm run build",
+        "outputDirectory": "build"
+      }
+    }]
+  }

@@ -3,13 +3,9 @@ const {connect}=require("./mongoos.js")
 let {userroute}=require("./route/Userroute.js")
 let {router}=require("./route/bcroute.js")
 let {obroute}=require("./route/obroute.js")
+let cors=require("cors")
 const app=express();
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    next();
-  });
+  app.use(cors())
 app.use(express.json())
 app.get("/", (req, res) => {
     res.send("Hello World")
