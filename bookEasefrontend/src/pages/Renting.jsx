@@ -14,7 +14,7 @@ export default function Renting({changeitem,loginstatus}) {
     const [sortOrder, setSortOrder] = useState('');
     let navigate=useNavigate()
     useEffect(() => {
-        fetch("http://localhost:8080/books")
+        fetch("https://book-ease-silk.vercel.app/books")
             .then(response => response.json())
             .then(data => {
                 setData(data);

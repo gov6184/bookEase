@@ -6,7 +6,7 @@ export default function BooksSection({changeitem}) {
   let i= Array.from({length:100})
   let [data,setdata]=useState([])
   useEffect(() => {
-    fetch("http://localhost:8080/books")
+    fetch("https://book-ease-silk.vercel.app/books")
         .then(response => response.json())
         .then(data => {
             setdata(data);
